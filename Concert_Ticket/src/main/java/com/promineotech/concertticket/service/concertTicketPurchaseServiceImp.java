@@ -1,7 +1,7 @@
-package com.promineotech.concert_ticket.service;
+package com.promineotech.concertticket.service;
 
-import com.promineotech.concert_ticket.entity.concert_ticket_purchase;
-import com.promineotech.concert_ticket.repository.concertTicketPurchaseRepo;
+import com.promineotech.concertticket.entity.concert_ticket_purchase;
+import com.promineotech.concertticket.repository.concertTicketPurchaseRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

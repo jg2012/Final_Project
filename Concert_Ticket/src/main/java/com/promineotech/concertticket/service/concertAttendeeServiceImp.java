@@ -1,7 +1,7 @@
-package com.promineotech.concert_ticket.service;
+package com.promineotech.concertticket.service;
 
-import com.promineotech.concert_ticket.entity.concert_attendee;
-import com.promineotech.concert_ticket.repository.concertAttendeeRepo;
+import com.promineotech.concertticket.entity.concert_attendee;
+import com.promineotech.concertticket.repository.concertAttendeeRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,7 +32,7 @@ public class concertAttendeeServiceImp implements concertAttendeeService{
     @Override
     public concert_attendee editConcertAttendee(concert_attendee concertAttendee, int id) {
         concert_attendee attendee = concertattendeerepo.findById(id).orElseThrow();
-
+4
         attendee.setConcert_attendee_name(concertAttendee.getConcert_attendee_name());
 
         concertattendeerepo.save(attendee);

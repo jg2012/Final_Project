@@ -1,4 +1,4 @@
-package com.promineotech.concert_ticket.controller;
+package com.promineotech.concertticket.controller;
 
 public class concertTicketPurchase {
 }

@@ -1,6 +1,6 @@
-package com.promineotech.concert_ticket.service;
+package com.promineotech.concertticket.service;
 
-import com.promineotech.concert_ticket.entity.concert_attendee;
+import com.promineotech.concertticket.entity.concert_attendee;
 
 import java.util.List;
 

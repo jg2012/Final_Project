@@ -1,6 +1,6 @@
-package com.promineotech.concert_ticket.repository;
+package com.promineotech.concertticket.repository;
 
-import com.promineotech.concert_ticket.entity.concert_show;
+import com.promineotech.concertticket.entity.concert_show;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface concertShowRepo extends JpaRepository<concert_show, Integer> {

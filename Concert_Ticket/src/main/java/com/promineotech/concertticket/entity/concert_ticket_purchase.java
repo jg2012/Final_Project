@@ -1,4 +1,4 @@
-package com.promineotech.concert_ticket.entity;
+package com.promineotech.concertticket.entity;
 
 
 import jakarta.persistence.Entity;
