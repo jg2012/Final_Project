@@ -14,7 +14,7 @@ public interface concertMerchPurchaseService {
     public concertMerchPurchase editConcertMerchPurchase(concertMerchPurchase concertmerchpurchase, int id);
 
 
-    public void deleteConcertMerchPurchase(concertMerchPurchase concertmerchpurchase, int id);
+    public void deleteConcertMerchPurchase( concertMerchPurchase concertmerchpurchase, int id );
 
 
 

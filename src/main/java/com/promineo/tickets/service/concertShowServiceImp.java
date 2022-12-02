@@ -2,6 +2,7 @@ package com.promineo.tickets.service;
 
 import com.promineo.tickets.Exceptions.ResourceNotFoundException;
 import com.promineo.tickets.entity.concertShow;
+import com.promineo.tickets.repo.concertAttendeeRepo;
 import com.promineo.tickets.repo.concertShowRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,7 +11,7 @@ import java.util.List;
 @Service
 public class concertShowServiceImp implements concertShowService {
 
-
+  
     private concertShowRepo concertshowrepo;
 
     @Autowired
@@ -44,6 +45,9 @@ public class concertShowServiceImp implements concertShowService {
 
     @Override
     public void deleteConcertShow(concertShow concertshow, int id) {
+
+
+
         concertshowrepo.deleteById(id);
 
     }

@@ -1,18 +1,20 @@
 package com.promineo.tickets.entity;
 
 
-import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
+import org.hibernate.Hibernate;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "/tickets/concert_show")
+@Table(name = "concert_show")
 public class concertShow {
 
     @Id
@@ -24,5 +26,11 @@ public class concertShow {
 
     @Column(value = "concert_attendee_id")
     private int concert_attendee_id;
+    
+    @ManyToMany(mappedBy = "concertShows", fetch = FetchType.LAZY)
+    @JsonIgnore
+    private Set<concertAttendee> concertAttendees = new HashSet<>();
+
+
 
 }

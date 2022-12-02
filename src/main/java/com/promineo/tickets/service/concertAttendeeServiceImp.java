@@ -8,15 +8,20 @@ import org.springframework.stereotype.Service;
 import com.promineo.tickets.Exceptions.ResourceNotFoundException;
 import com.promineo.tickets.entity.concertAttendee;
 import com.promineo.tickets.repo.concertAttendeeRepo;
+import com.promineo.tickets.repo.concertShowRepo;
 
 
 @Service
 public class concertAttendeeServiceImp implements concertAttendeeService {
     private concertAttendeeRepo concertattendeerepo;
+    
+ 
 
     @Autowired
     public concertAttendeeServiceImp(concertAttendeeRepo concertattendeerepo){
+	
         this.concertattendeerepo = concertattendeerepo;
+      
     }
 
     @Override

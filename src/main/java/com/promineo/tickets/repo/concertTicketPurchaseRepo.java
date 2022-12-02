@@ -1,10 +1,10 @@
 package com.promineo.tickets.repo;
 
+
+import com.promineo.tickets.entity.concertTicketPurchase;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.promineo.tickets.entity.concertAttendee;
 @Repository
-public interface concertAttendeeRepo extends JpaRepository<concertAttendee, Integer>{
-
+public interface concertTicketPurchaseRepo  extends JpaRepository<concertTicketPurchase, Integer> {
 }

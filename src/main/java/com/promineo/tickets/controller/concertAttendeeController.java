@@ -17,8 +17,11 @@ import com.promineo.tickets.service.concertAttendeeService;
 public class concertAttendeeController {
     
     
+    
+    @Autowired 
     private concertAttendeeService concertattendeeservice;
-    public final concertAttendeeRepo concertattendeerepo;
+    private concertAttendeeRepo concertattendeerepo;
+    
     @Autowired
     public concertAttendeeController(concertAttendeeService concertattendeeservice, concertAttendeeRepo concertattendeerepo) {
 	super(); 

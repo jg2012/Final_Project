@@ -1,7 +1,9 @@
 package com.promineo.tickets.controller;
 
 
+import com.promineo.tickets.entity.concertAttendee;
 import com.promineo.tickets.entity.concertMerchPurchase;
+import com.promineo.tickets.repo.concertAttendeeRepo;
 import com.promineo.tickets.repo.concertMerchPurchaseRepo;
 import com.promineo.tickets.service.concertMerchPurchaseService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,9 @@ public class concertMerchPurchaseController {
 
     public final concertMerchPurchaseService concertmerchpurchaseservice;
     public final concertMerchPurchaseRepo concertmerchpurchaserepo;
+    
+    @Autowired
+    private concertAttendeeRepo  concertateendeerepo; 
 
     @Autowired
     public concertMerchPurchaseController(concertMerchPurchaseService concertmerchpurchaseservice, concertMerchPurchaseRepo concertmerchpurchaserepo) {
@@ -45,5 +50,7 @@ public ResponseEntity<concertMerchPurchase> editConcertMerchPurchase(@PathVariab
         concertmerchpurchaseservice.deleteConcertMerchPurchase(concertmerchpurchase, id);
         return new ResponseEntity<String>("That purchase with: "+id + " was deleted.", HttpStatus.OK);
 }
+
+
 
 }
