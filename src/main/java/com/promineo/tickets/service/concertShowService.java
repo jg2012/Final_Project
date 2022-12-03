@@ -5,7 +5,6 @@ import com.promineo.tickets.entity.concertShow;
 import java.util.List;
 
 public interface concertShowService {
-
     public concertShow createConcertShow (concertShow concertshow);
 
     public List<concertShow> getAllConcertShow();

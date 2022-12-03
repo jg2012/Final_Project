@@ -5,8 +5,7 @@ import java.util.List;
 import com.promineo.tickets.entity.concertAttendee;
 
 public interface concertAttendeeService {
-    
-    
+
     public concertAttendee createConcertAttendee (concertAttendee concertattendee);
 
     public List<concertAttendee> getAllConcertAttendee();

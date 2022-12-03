@@ -45,6 +45,6 @@ public class concertTicketPurchaseController {
     @DeleteMapping("{id}")
     public ResponseEntity<String> deleteConcertTicketPurchase(@PathVariable int id, @RequestBody concertTicketPurchase concertticketpurchase){
         concertticketpurchaseservice.deleteConcertTicketPurchase(concertticketpurchase, id);
-        return new ResponseEntity<String>("That ticket purchase with id:" + id + "was deleted", HttpStatus.OK);
+        return new ResponseEntity<String>("That ticket purchase with id: " + id + " was deleted", HttpStatus.OK);
     }
 }

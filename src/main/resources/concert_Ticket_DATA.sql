@@ -9,6 +9,18 @@ INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Bad Bunny
 INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Lizzo', 1);
 INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Kendrick Lamar',1 );
 INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Beach House', 1);
+INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Bad Bunny', 2);
+INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Lizzo', 2);
+INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Kendrick Lamar',2 );
+INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Beach House', 2);
+INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Bad Bunny', 3);
+INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Lizzo', 3);
+INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Kendrick Lamar',3 );
+INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Beach House', 3);
+INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Bad Bunny', 4);
+INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Lizzo', 4);
+INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Kendrick Lamar',4 );
+INSERT INTO concert_show(concert_artist, concert_attendee_id) VALUES ('Beach House', 4);
 
 
 INSERT INTO concert_merch_purchase(CONCERT_MERCH_ITEM, CONCERT_ATTENDEE_ID) VALUES ('T-SHIRT', 1);
@@ -16,7 +28,3 @@ INSERT INTO concert_merch_purchase(CONCERT_MERCH_ITEM, CONCERT_ATTENDEE_ID) VALU
 INSERT INTO concert_merch_purchase(CONCERT_MERCH_ITEM, CONCERT_ATTENDEE_ID) VALUES ('VINYL', 1);
 INSERT INTO concert_merch_purchase(CONCERT_MERCH_ITEM, CONCERT_ATTENDEE_ID) VALUES ('POSTER', 1);
 
-# 1INSERT into concert_ticket_purchase(concert_attendee_id, concert_show_id) VALUES (1, 1);
-# INSERT into concert_ticket_purchase(concert_attendee_id, concert_show_id) VALUES (2, 1);
-# INSERT into concert_ticket_purchase(concert_attendee_id, concert_show_id) VALUES (3, 1);
-# INSERT into concert_ticket_purchase(concert_attendee_id, concert_show_id) VALUES (4, 1);

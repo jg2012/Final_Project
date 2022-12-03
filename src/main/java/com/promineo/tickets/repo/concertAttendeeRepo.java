@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 import com.promineo.tickets.entity.concertAttendee;
 @Repository
 public interface concertAttendeeRepo extends JpaRepository<concertAttendee, Integer>{
-
 }

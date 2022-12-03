@@ -1,7 +1,6 @@
 package com.promineo.tickets.controller;
 
 
-import com.promineo.tickets.entity.concertAttendee;
 import com.promineo.tickets.entity.concertMerchPurchase;
 import com.promineo.tickets.repo.concertAttendeeRepo;
 import com.promineo.tickets.repo.concertMerchPurchaseRepo;
@@ -31,26 +30,24 @@ public class concertMerchPurchaseController {
         this.concertmerchpurchaserepo = concertmerchpurchaserepo;
     }
 
-@GetMapping
-public List<concertMerchPurchase> getAllConcertMerchPurchase(){
+    @GetMapping
+    public List<concertMerchPurchase> getAllConcertMerchPurchase(){
         return  concertmerchpurchaseservice.getAllConcertMerchPurchase();
-}
+    }
 
-@PostMapping
+    @PostMapping
     public concertMerchPurchase createConcertMerchPurchase(@RequestBody concertMerchPurchase concertmerchpurchase){
         return concertmerchpurchaserepo.save(concertmerchpurchase);
-}
-@PutMapping("{id}")
-public ResponseEntity<concertMerchPurchase> editConcertMerchPurchase(@PathVariable int id, @RequestBody concertMerchPurchase concertmerchpurchase){
+    }
+    @PutMapping("{id}")
+    public ResponseEntity<concertMerchPurchase> editConcertMerchPurchase(@PathVariable int id, @RequestBody concertMerchPurchase concertmerchpurchase){
         return new ResponseEntity<concertMerchPurchase>(concertmerchpurchaseservice.editConcertMerchPurchase(concertmerchpurchase, id), HttpStatus.OK);
-}
+    }
 
-@DeleteMapping("{id}")
+    @DeleteMapping("{id}")
     public ResponseEntity<String> deleteConcertPurchase(@PathVariable int id, @RequestBody concertMerchPurchase concertmerchpurchase){
         concertmerchpurchaseservice.deleteConcertMerchPurchase(concertmerchpurchase, id);
-        return new ResponseEntity<String>("That purchase with: "+id + " was deleted.", HttpStatus.OK);
-}
-
-
+        return new ResponseEntity<String>("That purchase with id: " + id + " was deleted.", HttpStatus.OK);
+    }
 
 }

@@ -6,7 +6,6 @@ import java.util.List;
 
 public interface concertTicketPurchaseService {
 
-
     public concertTicketPurchase createConcertTicketPurchase(concertTicketPurchase concertticketpurchase);
 
     public List<concertTicketPurchase> getAllConcertTicketPurchase();
